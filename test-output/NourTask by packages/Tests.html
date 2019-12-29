@@ -1,0 +1,938 @@
+<html>
+<head>
+<title>TestNG:  Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/71</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 29 10:59:59 EET 2019</td>
+</tr>
+<tr><td>Total time:</td><td>32 seconds (32812 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.EmailValid.getResult()'><b>getResult</b><br>Test class: Tests.EmailValid<br>Parameters: [TestResult name=EmailTest status=FAILURE method=EmailValid.EmailTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.EmailValid@548e7350] output={null}]</td>
+<td><div><pre>java.lang.NullPointerException
+	at Tests.TestBase.getResult(TestBase.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1070740013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1070740013'><pre>java.lang.NullPointerException
+	at Tests.TestBase.getResult(TestBase.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Tests.EmailValid@548e7350</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.LoginTest.getResult()'><b>getResult</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.getResult()'><b>getResult</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.getResult()'><b>getResult</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.getResult()'><b>getResult</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.getResult()'><b>getResult</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.getResult()'><b>getResult</b><br>Test class: Tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.getResult()'><b>getResult</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.end()'><b>end</b><br>Test class: Tests.RegisterTests</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.EmailValid.EmailTest()'><b>EmailTest</b><br>Test class: Tests.EmailValid<br>Parameters: TC3_DataEntryNo66, Leslie, Alexander, LesliePBrowne@fleckens.hu, 123456789, Test!00066</td>
+<td><div><pre>java.lang.NullPointerException
+	at Tests.EmailValid.EmailTest(EmailValid.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1286643712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1286643712'><pre>java.lang.NullPointerException
+	at Tests.EmailValid.EmailTest(EmailValid.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Tests.EmailValid@548e7350</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S01, , Ahmed, aaluv@vawwi.ber, 123456789, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S02, Nour, , gzrlb@xrjuo.sby, 123456790, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S03, Nour, Ahmed, , 123456791, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S04, Nour, Ahmed, cdpem@ysajc.vzj, , Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S05, Nour, Ahmed, sbxmy@obmfs.apk, 123456793, , Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S06, Nour, Ahmed, rkcsl@jchjg.dsp, 123456794, Test@06, , false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S07, , , , , , , false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S08,             , Ahmed, mawxf@dfams.ybb, 123456796, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S09, !@#$%^&, Ahmed, aihlg@krsdr.vhx, 123456797, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S10, 152487, Ahmed, ikpkv@ogitf.vyq, 123456798, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S11, 5124!##$, Ahmed, snpvl@lstok.vnl, 123456799, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S12, nour, Ahmed, uzkpk@cbiwf.mus, 123456800, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S13, NOUR, Ahmed, , 123456801, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S14, nOur, Ahmed, xleif@wqovx.vyt, 123456802, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S15, Nour, Ahmed, brtwl@bjbla.wki, 123456803, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S16, Nour,                   , azajn@nqgtu.lfm, 123456804, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S17, Nour, !#$%^&, gjcgv@lpajh.piz, 123456805, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S18, Nour, 12547, pkqvp@hqptl.ejy, 123456806, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S19, Nour, 123456!$%, uqmsz@xowqv.mnp, 123456807, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S20, Nour, ahmed, vswiy@cxlnk.nxf, 123456808, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S21, Nour, AHMED, nuook@zqhqn.stg, 123456809, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S22, Nour, aHmed, fnkty@ldopo.rox, 123456810, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S23, Nour, Nour, sjtlx@amykm.loq, 123456811, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S24, Nour, Ahmed, qqsij@rqtej.mla, 123456812, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S25, Nour, Ahmed, gmngi@nnbmp.wvf, 123456813, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S26, Nour, Ahmed, hu.ov@gmail.com, 123456814, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S27, Nour, Ahmed, ri+jg@gmail.com, 123456815, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S28, Nour, Ahmed, xt+fu@123.123.123.123, 123456816, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S29, Nour, Ahmed, ve+wj@[123.123.123.123], 123456817, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S30, Nour, Ahmed, 9588@gmail.com, 123456818, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S31, Nour, Ahmed, rotl@gmail-one.com, 123456819, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S32, Nour, Ahmed, wj_id@gmail.com, 123456820, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S33, Nour, Ahmed, zint@gmail.com.co, 123456821, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S34, Nour, Ahmed, pb-gf@gmail.com, 123456822, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S35, Nour, Ahmed, test, 123456823, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S36, Nour, Ahmed, #@%^%#$@#$@#.com, 123456824, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S37, Nour, Ahmed, @test.com, 123456825, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S38, Nour, Ahmed, Joe Smith <email@domain.com>, 123456826, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S39, Nour, Ahmed, email.domain.com, 123456827, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S40, Nour, Ahmed, email@domain@domain.com, 123456828, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S41, Nour, Ahmed, .email@domain.com, 123456829, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S42, Nour, Ahmed, email.@domain.com, 123456830, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S43, Nour, Ahmed, email..email@domain.com, 123456831, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S44, Nour, Ahmed, ?????@domain.com, 123456832, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S45, Nour, Ahmed, email@domain.com (Joe Smith), 123456833, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S46, Nour, Ahmed, email@domain, 123456834, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S47, Nour, Ahmed, email@-domain.com, 123456835, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S48, Nour, Ahmed, email@domain.web, 123456836, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S49, Nour, Ahmed, email@111.222.333.4444, 123456837, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S50, Nour, Ahmed, qqsij@rqtej.mla, 123456838, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S51, Nour, Ahmed, alljy@qrhij.xjs, qwerty, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S52, Nour, Ahmed, lfsku@dfgkx.glr, 123qwerty, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S53, Nour, Ahmed, fwlxc@xxwuq.rnj, 123qwerty, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S54, Nour, Ahmed, iltzi@wcokv.hhs, 1234 qwert, Test@06, Test@06, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S55, Nour, Ahmed, palja@rdykj.jfm, 123456843, Test@06, Test@06, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S56, Nour, Ahmed, vesay@gyviv.gnc, 123456844, asdf, asdf, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S57, Nour, Ahmed, rppwq@oexml.lte, 123456845, Tes, Tes, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S58, Nour, Ahmed, znxvb@xdmog.gli, 123456846, Te!, Te!, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S59, Nour, Ahmed, zacsp@svnyi.esj, 123456847, Te^0, Te^0, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S60, Nour, Ahmed, dplce@mvabu.aga, 123456848, qwerty, qwerty, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S61, Nour, Ahmed, dbpcy@apwwr.kyq, 123456849, Qwerty, Qwerty, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S62, Nour, Ahmed, lwmgx@aozfv.vkt, 123456850, Q!erty, Test@09, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S63, Nour, Ahmed, jblpc@vyuut.vgf, 123456851, Q!er3y, Test@10, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S64, Nour, Ahmed, ebxbu@aorvd.vto, 123456852, Q!erty, Q!erty, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.RegisterTests.RegisterTest()'><b>RegisterTest</b><br>Test class: Tests.RegisterTests<br>Parameters: TC1_S65, Nour, Ahmed, grpsn@diyii.xht, 123456853, Q!er3y, Q!er3y, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.RegisterTests@604ed9f0</td></tr>
+<tr>
+<td title='Tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: Tests.LoginTest<br>Parameters: TC2_S01, nourahmed@gmail.com, 123, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: Tests.LoginTest<br>Parameters: TC2_S02, nourahmedabbas@gmail.com, 123, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: Tests.LoginTest<br>Parameters: TC2_S03, nourahmedabbas, 123456, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: Tests.LoginTest<br>Parameters: TC2_S04, , 123456, false</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: Tests.LoginTest<br>Parameters: TC2_S05, nourahmedabbas@gmail.com, , false</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+<tr>
+<td title='Tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: Tests.LoginTest<br>Parameters: TC2_S06, nourahmedabbas@gmail.com, 123456, true</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginTest@53b32d7</td></tr>
+</table><p>
+</body>
+</html>

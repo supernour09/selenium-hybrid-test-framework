@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NourTask by packages]">
+  <test name="Tests(failed)">
+    <classes>
+      <class name="Tests.RegisterTests">
+        <methods>
+          <include name="before"/>
+          <include name="RegisterTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.RegisterTests -->
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+      <class name="Tests.EmailValid">
+        <methods>
+          <include name="EmailTest" invocation-numbers="0"/>
+          <include name="getResult"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- Tests.EmailValid -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [NourTask by packages] -->

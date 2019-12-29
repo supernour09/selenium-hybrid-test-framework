@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="classes">
+  <test name="PhpTravel(failed)" parallel="classes">
+    <classes>
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="before"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+      <class name="Tests.RegisterTests">
+        <methods>
+          <include name="getResult"/>
+          <include name="before"/>
+          <include name="RegisterTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Tests.RegisterTests -->
+      <class name="Tests.EmailValid">
+        <methods>
+          <include name="EmailTest" invocation-numbers="0"/>
+          <include name="getResult"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- Tests.EmailValid -->
+    </classes>
+  </test> <!-- PhpTravel(failed) -->
+</suite> <!-- Failed suite [Suite] -->

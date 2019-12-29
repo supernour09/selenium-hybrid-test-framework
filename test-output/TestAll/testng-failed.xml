@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestAll]">
+  <test name="order(failed)">
+    <classes>
+      <class name="Tests.registerTests">
+        <methods>
+          <include name="RegisterTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.registerTests -->
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+      <class name="Tests.EmailValid">
+        <methods>
+          <include name="EmailTest" invocation-numbers="0"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- Tests.EmailValid -->
+    </classes>
+  </test> <!-- order(failed) -->
+</suite> <!-- Failed suite [TestAll] -->

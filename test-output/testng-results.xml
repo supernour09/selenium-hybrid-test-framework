@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="111616" started-at="2019-12-29T10:32:16Z" finished-at="2019-12-29T10:34:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="111616" started-at="2019-12-29T10:32:16Z" finished-at="2019-12-29T10:34:08Z">
+      <class name="Tests.EmailValid">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.EmailValid@3ffc5af1]" name="setUp" is-config="true" duration-ms="4393" started-at="2019-12-29T12:32:12Z" finished-at="2019-12-29T12:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="before()[pri:0, instance:Tests.EmailValid@3ffc5af1]" name="before" is-config="true" duration-ms="2403" started-at="2019-12-29T12:32:16Z" finished-at="2019-12-29T12:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="EmailTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.EmailValid@3ffc5af1]" name="EmailTest" duration-ms="103454" started-at="2019-12-29T12:32:19Z" data-provider="EmailData" finished-at="2019-12-29T12:34:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3_DataEntryNo66]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leslie]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Alexander]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LesliePBrowne@fleckens.hu]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test!00066]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed Test in Email Address Check expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed Test in Email Address Check expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at Tests.EmailValid.EmailTest(EmailValid.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.EmailValid@3ffc5af1]" name="getResult" is-config="true" duration-ms="5193" started-at="2019-12-29T12:34:02Z" finished-at="2019-12-29T12:34:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EmailTest status=FAILURE method=EmailValid.EmailTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.EmailValid@3ffc5af1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="end()[pri:0, instance:Tests.EmailValid@3ffc5af1]" name="end" is-config="true" duration-ms="551" started-at="2019-12-29T12:34:07Z" finished-at="2019-12-29T12:34:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.EmailValid@3ffc5af1]" name="tearDown" is-config="true" duration-ms="646" started-at="2019-12-29T12:34:08Z" finished-at="2019-12-29T12:34:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.EmailValid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
